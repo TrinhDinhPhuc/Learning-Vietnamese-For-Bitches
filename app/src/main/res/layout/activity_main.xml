@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nathannguyen.learnvietnamese.MainActivity">
+
+
+    <LinearLayout
+        android:background="#9E9E9E"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/numColor">
+            <TextView
+
+                android:id="@+id/number"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:text="Numbers"
+                android:onClick="menuList"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/famColor">
+
+            <TextView
+                android:id="@+id/family"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:text="Family Memebers"
+                android:onClick="menuList"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f74ff1">
+
+            <TextView
+                android:id="@+id/color"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:text="Colors"
+                android:onClick="menuList"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4FC3F7">
+
+            <TextView
+                android:id="@+id/phrase"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="menuList"
+                android:text="Phrases" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ece81e">
+
+            <TextView
+                android:id="@+id/Music"
+                style="@style/itemMenu"
+                android:background="?attr/selectableItemBackground"
+                android:onClick="menuList"
+                android:text="Music" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>
